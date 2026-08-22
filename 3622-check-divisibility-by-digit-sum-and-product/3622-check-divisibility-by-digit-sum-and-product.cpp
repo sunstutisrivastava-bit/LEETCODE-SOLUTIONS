@@ -8,7 +8,6 @@ public:
             s=s+r;
             m=m*r;
             a=a/10;
-            cout<<m<<" "<<s<<endl;
         }
         if(n%(m+s)==0){
             return true;
