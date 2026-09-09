@@ -11,16 +11,13 @@ public:
         if(s[i]>=65&&s[i]<=90) s[i]=tolower(s[i]);
         else if(!((s[i]>=97&&s[i]<=122)||(s[i]>=48&&s[i]<=57))){
             i++;
-            cout<<i<<"i"<<endl;
             continue;
         }
         if(s[j]>=65&&s[j]<=90) s[j]=tolower(s[j]);
         else if(!((s[j]>=97&&s[j]<=122)||(s[j]>=48&&s[j]<=57))) {
             j--;
-            cout<<j<<"j"<<endl;
             continue;
         }
-        cout<<s[i]<<"  "<<s[j]<<endl;
         if(s[i]==s[j]){
             c++;
             
@@ -30,7 +27,6 @@ public:
         j--;     
 
        }
-       cout<<k;
        if(c==k){
         return true;
        }
